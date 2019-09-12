@@ -1,0 +1,133 @@
+body{
+    font-size: 1em;
+    margin: 0 auto;
+}
+main{
+    background-color: rgb(41, 10, 70);
+    color: whitesmoke;
+    text-align: center;
+}
+nav{
+    font-size: 1.5em;
+    height: 35px;
+    padding: 20px;
+    background-color: #FF7F50;
+    display: flex;
+    justify-content: flex-end;
+    right: 0px;
+}
+nav div{
+    margin: 10px;
+}
+#navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+a{
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav div a:hover{
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+div#welcome-section{
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section h1{
+    font-family: sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+.sub {
+    margin-top: 3px;
+    font-style: italic;
+    color: orchid;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+#projects{
+    position: relative;
+    background-color: #45567d;
+}
+#projects > h2{
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px;
+}
+.project-tile{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    margin-right: 100px;
+    padding-bottom: 50px;
+}
+ .project-title{
+    /* text-align: center;
+    color: wheat;
+    display: flex;
+    position: relative;
+    left: 200px;
+    bottom: -600px; */
+    visibility: hidden;
+}
+section#online-presence{
+    background: #FF7F50;
+    color: #290a46;
+    margin-top: 0%;
+    padding-top: 0%
+}
+#profile-link{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;    
+}
+#online-presence h3{
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+button{
+    width: 130px;
+    height: 50px;
+    background: #45567d;
+    font-size: 1em;
+    font-weight: bold;
+}
+button:hover, .goto{
+    cursor: pointer;
+    color: black;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    #navbar{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+    }
+}
+
+@media(max-width: 600px){
+    .project-tile{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .project-title{
+        display: none;
+    }
+    
